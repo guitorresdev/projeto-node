@@ -29,6 +29,17 @@ app.post('/clientes', (req, res, next) => {
     res.status(201).json(clientes);
 });
 
+app.delete('/clientes', (req, res, next) => {
+    const cliente = req.body;
+    rest.json(clientes);
+
+});
+
+app.put('/clientes', (req, res, next) => {
+    const cliente = req.body;
+    rest.json(clientes);
+});
+
 app.get('/teste', (req, res, next) => {
     res.json(clientes);
 });
